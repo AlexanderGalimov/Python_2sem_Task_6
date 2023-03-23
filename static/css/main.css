@@ -1,0 +1,112 @@
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    line-height: 1.5;
+    margin: 0;
+    background-color: #A2C4DF;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3vh;
+    list-style-type: none;
+}
+
+.container{
+    width: 75vw;
+    margin: 0 auto 12vh auto;
+    background: cornsilk;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-bottom: 5vh;
+    border: 3px solid;
+    border-radius: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+.headers{
+    text-align: center;
+    text-transform: uppercase;
+    padding: 5vh;
+}
+
+.car-img {
+    width: 30vw;
+    float: left;
+    margin-right :2vw;
+}
+.small-car-img{
+    width: 20vw;
+    float: left;
+    margin-right: 2vw;
+    transition: all ease 1s;
+}
+.big-car-image{
+    width: 75vw;
+    border-radius: 20px;
+}
+
+.car-img-1{
+    display: block;
+    float: left;
+    margin-bottom: 2vh;
+}
+.car-img-2{
+    display: block;
+    float: none;
+}
+.cars-info{
+    margin-bottom: 29vh;
+}
+.container:nth-child(2) {
+    padding-top: 5vh;
+}
+.container:first-child{
+    border-top: none;
+}
+.nav li {
+    font-size: 28px;
+    font-family: system-ui, serif;
+    font-weight: 500;
+}
+.logo-img {
+    width: 10vh;
+    float: left;
+    margin-right: 1vw;
+}
+.car-img:hover{
+    width: 35vw;
+}
+.small-car-img:hover{
+    width: 50vh;
+}
+.animation{
+    transition: all ease 1s;
+    border-radius: 10px;
+}

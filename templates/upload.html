@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image_Magic_main</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <ul class="nav">
+                <li>
+                    <span>Image_magic</span>
+                </li>
+                <li><a href="/about" target="_blank">О создателе</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="container">
+        <form id="upload-form" action="{{url_for('upload')}}" method="POST" enctype="multipart/form-data">
+            <input type="file" name="file" accept="image/*" multiple>
+            <input type="submit" value="send">
+        </form>
+    </div>
+
+    <div class="container">
+        <h2 class="headers">Picture</h2>
+    </div>
+</body>
+</html>
