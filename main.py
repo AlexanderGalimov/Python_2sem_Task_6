@@ -1,5 +1,6 @@
 import os
 
+from PIL import Image, ImageEnhance
 from flask import Flask, render_template, request
 
 APP_ROUTE = os.path.dirname(os.path.abspath(__file__))
@@ -27,12 +28,22 @@ def upload():
 
     for file in request.files.getlist("file"):
         print(file)
-        filename = file.filename
-        des = "/".join([target, filename])
+        des = "/".join([target, "temp.jpg"])
         print(des)
         file.save(des)
 
-    return render_template("upload.html")
+    change_brightness()
+
+    return render_template("complete.html")
+
+
+def change_brightness():
+    img = Image.open("static/images/temp.jpg")
+    enhancer = ImageEnhance.Brightness(img)
+    # to reduce brightness by 50%, use factor 0.5
+    img = enhancer.enhance(0.5)
+
+    img.save("static/images/changed_image.jpg")
 
 
 if __name__ == "__main__":
