@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7555e555-7a14-4894-89ff-c21ecbd6b3cb" name="Changes" comment="">
+    <list default="true" id="7555e555-7a14-4894-89ff-c21ecbd6b3cb" name="Changes" comment="output image">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/images/IMG_8713.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/changed_image.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/temp.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/complete.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/complete.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/upload.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/upload.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,6 +85,18 @@
       <option name="presentableId" value="Default" />
       <updated>1676278018737</updated>
     </task>
+    <task id="LOCAL-00001" summary="output image">
+      <created>1680544561149</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1680544561149</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="output image" />
+    <option name="LAST_COMMIT_MESSAGE" value="output image" />
   </component>
 </project>
