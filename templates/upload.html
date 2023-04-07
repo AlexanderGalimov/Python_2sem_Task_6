@@ -20,12 +20,13 @@
         <form id="upload-form" action="{{url_for('upload')}}" method="POST" enctype="multipart/form-data">
             <input type="file" name="file" accept="image/*" multiple>
             <input name="brightness" placeholder="brightness">
+            <input name="rotate" placeholder="rotate">
+            <input name="left" placeholder="left">
+            <input name="upper" placeholder="upper">
+            <input name="right" placeholder="right">
+            <input name="lower" placeholder="lower">
             <input type="submit" value="send">
         </form>
-    </div>
-
-    <div class="container">
-        <h2 class="headers">Picture</h2>
     </div>
 </body>
 </html>
