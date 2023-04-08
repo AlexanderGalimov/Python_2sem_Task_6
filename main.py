@@ -1,6 +1,6 @@
 import os
 
-from PIL import Image, ImageEnhance
+from PIL import Image, ImageEnhance, ImageFilter
 from flask import Flask, render_template, request, send_from_directory
 
 APP_ROUTE = os.path.dirname(os.path.abspath(__file__))
@@ -60,9 +60,15 @@ def upload():
             lower_parsed = int(lower)
             crop_image(destination, left_parsed, upper_parsed, right_parsed, lower_parsed)
 
+            c = request.form['blur']
+            condition = int(c)
+            if condition == 1:
+                blur_image(destination)
+            else:
+                pass
 
         except TypeError:
-            print("error")
+            print("not entered")
         except ValueError:
             print("error")
 
@@ -82,6 +88,12 @@ def rotate_image(filename, angle):
     img = Image.open(filename)
     rotated_img = img.rotate(angle)
     rotated_img.save(filename)
+
+
+def blur_image(filename):
+    img = Image.open(filename)
+    changed = img.filter(ImageFilter.GaussianBlur())
+    changed.save(filename)
 
 
 def crop_image(filename, left, upper, right, lower):
